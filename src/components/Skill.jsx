@@ -39,7 +39,7 @@ function Skill(){
                         <div className="skill-row" key={i}>
                             {
                                 items.map((item,j)=>(
-                                    <div key={i+j}>
+                                    <div key={i+'-'+j}>
                                         <img src={item.imageFilePath} />
                                         <span> {item.text} </span>   
                                     </div>

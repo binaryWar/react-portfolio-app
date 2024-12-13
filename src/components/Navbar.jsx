@@ -12,6 +12,7 @@ function Navbar({ homeRef, skillRef, projectRef }) {
             scrollToHome();
         }
     }
+
     const scrollToHome =() => homeRef.current.scrollIntoView({ behavior: 'auto', block: "start"});
     const scrollToSkill = () => skillRef.current.scrollIntoView({ behavior: 'auto',block:"start"})
     const scrollToProject=() => projectRef.current.scrollIntoView({ behavior: 'auto',block:"start" })
@@ -40,7 +41,7 @@ function Navbar({ homeRef, skillRef, projectRef }) {
         return ()=>{
             document.getElementById("main-container").removeEventListener("scroll",handleScroll)
         };
-    }, []); // Empty dependency array ensures it runs once after mount
+    }, []); 
       
 
     return (
@@ -53,7 +54,7 @@ function Navbar({ homeRef, skillRef, projectRef }) {
                 </div>
                 <div className={`title ${activeHeader === 'skill' ? 'active' : ''}`} onClick={() => onHeaderClick('skill')}>
                     <span>
-                        skill
+                        Skill
                     </span>
                 </div>
                 <div className={`title ${activeHeader === 'exp' ? 'active' : ''}`} onClick={() => onHeaderClick('exp')}>

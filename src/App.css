@@ -197,4 +197,34 @@ div.img-wrapper{
 div.img-wrapper img{
   border-radius: 10px;
 }
-
+.w_0_1_wrapper_text{
+  width: 65%;
+}
+@media only screen and (max-width: 600px) {
+  .w_0_1_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  p.about-me{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .w_0_1_wrapper .w_0_1_wrapper_text{
+    width: 100%;
+  }
+  div.img-wrapper{
+    width: unset;
+  } 
+  .welcome-text {
+    display: none;
+  }
+  .skill-row {
+    display: block;
+    /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; */
+  }
+}
