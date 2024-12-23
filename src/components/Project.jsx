@@ -7,14 +7,14 @@ function Project() {
             project_name: "Digital Asset Finance Network",
             position : "Full Stack Developer",
             descriptions: [
-                "Built a microservices-based digital platform using Angular and Node.js to streamline lending and borrowing of digital assets, improving transaction tracking and liquidity management.",
+                "Built a microservices-based digital platform using Angular and Spring Boot to streamline lending and borrowing of digital assets, improving transaction tracking and liquidity management.",
                 "Designed and implemented an onboarding module and backend RESTful API, increasing real-time negotiation efficiency by 25% through automated RFQ creation and margin calls.",
                 "Integrated Copper payment API to secure loan transactions and implemented AWS KMS for data encryption, ensuring compliance and security.",
                 "Mentored junior developers, conducting code reviews and providing best practices, increasing the team's overall coding standards.",
                 "Implemented caching strategies using Memcached and database optimization, reducing API loading times by 30%, managing concurrent requests to prevent timeouts and duplicate transactions with lock mechanisms."
             ],
             tech_stack: [
-                "Angular", "Node.js", "PostgreSQL", "Express.js", "S3", "AWS KMS", "Kafka", "HTML", "CSS"
+                "Angular","Spring Boot", "Node.js", "PostgreSQL", "Express.js", "S3", "AWS KMS", "Kafka", "HTML", "CSS"
             ]
         },
         {
@@ -24,12 +24,12 @@ function Project() {
             project_name: "Insurance Claims Platform",
             position: "Full Stack Developer",
             descriptions: [
-                "Developed a responsive claims surveyor platform using Angular and Node.js, increasing claims processing efficiency by 30%.",
+                "Developed a responsive claims surveyor platform using Angular and Spring Boot, increasing claims processing efficiency by 30%.",
                 "Automated claim generation through a REST API, reducing manual data entry by 50% and controlling operational costs.",
                 "Incorporated OEM API updates to enhance motor insurance claim processes, streamlining workflows and decreasing manual effort by 40%."
             ],
             tech_stack: [
-                "Angular", "TypeScript", "HTML", "CSS", "Bootstrap 4", "Node.js", "Express.js"
+                "Angular", "TypeScript", "HTML", "CSS", "Bootstrap 4", "Spring Boot", "Java", "DataJPA", "Hibernate"
             ]
         },
         {
@@ -44,7 +44,7 @@ function Project() {
                 "Developed an internal pre-onboarding portal with RESTful API and Keycloak integration, reducing recruitment costs by 30%."
             ],
             tech_stack: [
-                "Angular", "TypeScript", "HTML", "CSS", "Bootstrap 4", "Node.js", "Express.js"
+                "Angular", "TypeScript", "HTML", "CSS", "Bootstrap 4", "Node.js", "Express.js","Spring Boot", "ReactJS"
             ]
         },
         {
@@ -72,7 +72,7 @@ function Project() {
             <div className="project-wrapper">
                 {
                     experiences.map((exp, ind) => (
-                        <div className="card">
+                        <div className="card" key={ind}>
                             <div className="timeline pb-0">
                                 <div className="location-period"><span>{exp.location ? exp.location : ""}</span> | {exp.duration}</div>
                                 <div className="company-name">{exp.company_name}
